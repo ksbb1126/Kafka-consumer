@@ -6,6 +6,6 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface OrderMapper {
-    @Insert("insert into order values(null, #{name}, #{storeName})")
+    @Insert("insert into orders values(null, #{name}, #{storeName})")
     void insert(@Param("name") String name, @Param("storeName") String storeName);
 }
